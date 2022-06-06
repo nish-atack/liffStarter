@@ -1,4 +1,4 @@
-<script>
+
 window.onload = function() {
     const useNodeJS = false;   // if you are not using a node server, set this value to false
     const defaultLiffId = "1657192220-EKGPj8q3";   // change the default LIFF value if you are not using a node server
@@ -257,5 +257,3 @@ function toggleElement(elementId) {
         elem.style.display = 'block';
     }
 }
-
-</script>
