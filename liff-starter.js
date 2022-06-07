@@ -1,3 +1,4 @@
+
 window.onload = function() {
     const useNodeJS = true;   // if you are not using a node server, set this value to false
     const defaultLiffId = "1657196041-vDWabr0g";   // change the default LIFF value if you are not using a node server
@@ -180,9 +181,7 @@ function registerButtonHandlers() {
             ).catch(function (res) {
                 document.getElementById('shareTargetPickerMessage').textContent = "Failed to launch share target picker.";
             });
-        } else {
-            document.getElementById('shareTargetPickerMessage').innerHTML = "<div>Share target picker unavailable.<div><div>This is possibly because you haven't enabled the share target picker on <a href='https://developers.line.biz/console/'>LINE Developers Console</a>.</div>";
-        }
+        } 
     });
 
     // login call, only when external browser is used
@@ -224,6 +223,13 @@ function toggleProfileData() {
 }
 
 /**
+* Toggle scanCode result field
+*/
+function toggleQrCodeReader() {
+    toggleElement('scanQr');
+}
+
+/**
 * Toggle specified element
 * @param {string} elementId The ID of the selected element
 */
@@ -235,3 +241,5 @@ function toggleElement(elementId) {
         elem.style.display = 'block';
     }
 }
+
+
