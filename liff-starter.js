@@ -184,15 +184,6 @@ function registerButtonHandlers() {
         
 
 
-
-
-var element = "document.getElementById(id)"
- var st =  SpreadsheetApp.openById("1xVJSbo6wOgy1DR0-iryS56f7vAppMdo51q-Do58fjLs").getSheetByName("log");
-  st.getRange(3,2).setValue(element);
-
-    
-            
-            
             
             document.getElementById('statusMessageField').textContent = profile.statusMessage;
             toggleProfileData();
